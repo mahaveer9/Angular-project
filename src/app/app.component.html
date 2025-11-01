@@ -1,0 +1,6 @@
+<mat-toolbar color="primary">
+  <span>RBAC Web App</span>
+  <span style="flex:1 1 auto"></span>
+  <button mat-button *ngIf="auth.isLoggedIn()" (click)="logout()">Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>
